@@ -1,0 +1,24 @@
+Q1. Running Elastic
+Run Elastic Search 8.4.3, and get the cluster information. If you run it on localhost, this is how you do it:
+
+curl localhost:9200
+What's the version.build_hash value?
+
+(base) jupyter@gracechuang-alloy-test:~$ curl localhost:9200
+{
+  "name" : "aa9fe0bcb507",
+  "cluster_name" : "docker-cluster",
+  "cluster_uuid" : "RTFcATM-Skm3WPkC5XB1CA",
+  "version" : {
+    "number" : "8.4.3",
+    "build_flavor" : "default",
+    "build_type" : "docker",
+    "build_hash" : "42f05b9372a9a4a470db3b52817899b99a76ee73",
+    "build_date" : "2022-10-04T07:17:24.662462378Z",
+    "build_snapshot" : false,
+    "lucene_version" : "9.3.0",
+    "minimum_wire_compatibility_version" : "7.17.0",
+    "minimum_index_compatibility_version" : "7.0.0"
+  },
+  "tagline" : "You Know, for Search"
+}
